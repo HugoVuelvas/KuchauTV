@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuchau TV - Canal de Caricaturas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0px;
+            padding: 0;
+        }
+        body section{
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 50px;
+            margin-top: 10px;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            color: #333;
+        }
+        .caricaturas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .caricatura {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: #333 0px 0px px;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            text-align: start;
+        }
+        .caricatura img {
+            display: block;
+            max-width: 100%;
+            margin: 0px auto;
+            height: max-content;
+            border-radius: 10px;
+            
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border: 1px solid #ccc;
+        }
+        input[type="text"], textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>¡Bienvenidos a Kuchau TV!</h1>
+    <p>El mejor canal para disfrutar de tus caricaturas favoritas</p>
+</header>
+
+<section class="caricaturas">
+    <div class="caricatura">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd5zBeLRHiwIRRRPBBkiwiBhZTHHyOg71ttw&s" alt="">
+        <h2>KND: Los Chicos del Barrio</h2>
+        <p>Un grupo de niños de 10 años llevan a cabo sus misiones secretas desde su misteriosa casa del árbol, oculta de los adultos. Cada niño tiene una especialidad, y juntos trabajan como equipo.</p>
+    </div>
+    <div class="caricatura">
+        <img src="https://www.sopitas.com/wp-content/uploads/2022/08/max-steel-comerciales-bajo-presupuesto-tiktok.jpeg" alt="">
+        <h2>Max Steel</h2>
+        <p>Un joven biónico se transforma en un súper agente con poderes sobrenaturales y combate a los enemigos de la paz.</p>
+    </div>
+    <div class="caricatura">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbJjTHXZ1NQQp80AZCdJ7h5RgE4wNhvUV-6A&s" alt="">
+        <h2>Winx Club</h2>
+        <p>Bloom es una chica con poderes mágicos que va a una escuela de hadas para mejorar sus habilidades. Ella hace amistad con otras hadas y juntas forman el Club Winx. Ellas luchan por salvar al universo de Lord Darkar y las brujas.</p>
+    </div>
+    <div class="caricatura">
+        <img src="https://images6.alphacoders.com/109/thumb-1920-1099224.jpg" alt="">
+        <h2>Danny Phantom</h2>
+        <p>Danny un joven que tiene superpoderes paranormales y que sólo su hermana y mejores amigos saben acerca de su secreto.</p>
+    </div>
+    <div class="caricatura">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpznlMxWSz6n0gRrSG5mwiC3LDkq4XqHK2Q&s" alt="Caricatura 5">
+        <h2>Kick Buttowski</h2>
+        <p>Kick Buttowski es un doble de riesgo de 12 años fuera de lo común que sueña con ser famoso en todo el mundo con la ayuda de su mejor amigo Gunther.</p>
+    </div>
+    <div class="caricatura">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRciSiLitrW-W_1HYIw5jvwS2afMsTK2465gg&s" alt="Caricatura 3">
+        <h2>Ben 10</h2>
+        <p>Ben Tennyson es un niño de 10 años de edad que descubre un dispositivo mágico que lo puede convertir en 10 héroes alienígenas diferentes cada uno con sus propias habilidades, ayudando a los demás contra los malhechores.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Horarios de Transmisión</h2>
+    <table>
+        <tr>
+            <th>Caricatura</th>
+            <th>Horario</th>
+        </tr>
+        <tr>
+            <td>Ben 10</td>
+            <td>08:00 AM - 09:00 AM</td>
+        </tr>
+        <tr>
+            <td>Bakugan</td>
+            <td>09:00 AM - 10:00 AM</td>
+        </tr>
+        <tr>
+            <td>El increible mundo de gumball</td>
+            <td>10:00 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td>Max Steel</td>
+            <td>10:00 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>10:00 AM - 11:00 AM</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Sugerencias</h2>
+    <form>
+        <label for="nombre">Nombre del Programa:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="descripcion">Descripción del Programa:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar Sugerencia">
+    </form>
+</section>
+
+</body>
+</html>
