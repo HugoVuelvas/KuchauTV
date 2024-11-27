@@ -1,174 +1,429 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuchau TV - Canal de Caricaturas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0px;
-            padding: 0;
-        }
-        body section{
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 50px;
-            margin-top: 10px;
-            padding: 0;
-        }
-        header {
-            background-color: #ffcc00;
-            padding: 40px;
-            text-align: center;
-            font-size: 20px;
-        }
-        header h1 {
-            font-size: 50px;
-            margin: 0;
-            color: #333;
-        }
-        .caricaturas {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .caricatura {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            box-shadow: #333 0px 0px px;
-            border-radius: 20px;
-            margin: 10px;
-            padding: 10px;
-            width: 300px;
-            text-align: start;
-        }
-        .caricatura img {
-            display: block;
-            max-width: 100%;
-            margin: 0px auto;
-            height: max-content;
-            border-radius: 10px;
-            
-        }
-        table {
-            width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #333;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        form {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px auto;
-            width: 50%;
-            border: 1px solid #ccc;
-        }
-        input[type="text"], textarea {
-            width: 95%;
-            padding: 10px;
-            margin: 10px;
-            border: 1px solid #ccc;
-        }
-        input[type="submit"] {
-            background-color: #ffcc00;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
+        .card {
+            margin-bottom: 5%;
         }
     </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.add('d-none'));
+            document.getElementById(sectionId).classList.remove('d-none');
+        }
+    </script>
 </head>
-<body>
 
-<header>
-    <h1>¡Bienvenidos a Kuchau TV!</h1>
-    <p>El mejor canal para disfrutar de tus caricaturas favoritas</p>
-</header>
+<body onload="showSection('inicio')">
 
-<section class="caricaturas">
-    <div class="caricatura">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd5zBeLRHiwIRRRPBBkiwiBhZTHHyOg71ttw&s" alt="">
-        <h2>KND: Los Chicos del Barrio</h2>
-        <p>Un grupo de niños de 10 años llevan a cabo sus misiones secretas desde su misteriosa casa del árbol, oculta de los adultos. Cada niño tiene una especialidad, y juntos trabajan como equipo.</p>
-    </div>
-    <div class="caricatura">
-        <img src="https://www.sopitas.com/wp-content/uploads/2022/08/max-steel-comerciales-bajo-presupuesto-tiktok.jpeg" alt="">
-        <h2>Max Steel</h2>
-        <p>Un joven biónico se transforma en un súper agente con poderes sobrenaturales y combate a los enemigos de la paz.</p>
-    </div>
-    <div class="caricatura">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbJjTHXZ1NQQp80AZCdJ7h5RgE4wNhvUV-6A&s" alt="">
-        <h2>Winx Club</h2>
-        <p>Bloom es una chica con poderes mágicos que va a una escuela de hadas para mejorar sus habilidades. Ella hace amistad con otras hadas y juntas forman el Club Winx. Ellas luchan por salvar al universo de Lord Darkar y las brujas.</p>
-    </div>
-    <div class="caricatura">
-        <img src="https://images6.alphacoders.com/109/thumb-1920-1099224.jpg" alt="">
-        <h2>Danny Phantom</h2>
-        <p>Danny un joven que tiene superpoderes paranormales y que sólo su hermana y mejores amigos saben acerca de su secreto.</p>
-    </div>
-    <div class="caricatura">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpznlMxWSz6n0gRrSG5mwiC3LDkq4XqHK2Q&s" alt="Caricatura 5">
-        <h2>Kick Buttowski</h2>
-        <p>Kick Buttowski es un doble de riesgo de 12 años fuera de lo común que sueña con ser famoso en todo el mundo con la ayuda de su mejor amigo Gunther.</p>
-    </div>
-    <div class="caricatura">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRciSiLitrW-W_1HYIw5jvwS2afMsTK2465gg&s" alt="Caricatura 3">
-        <h2>Ben 10</h2>
-        <p>Ben Tennyson es un niño de 10 años de edad que descubre un dispositivo mágico que lo puede convertir en 10 héroes alienígenas diferentes cada uno con sus propias habilidades, ayudando a los demás contra los malhechores.</p>
-    </div>
-</section>
+    <header class="bg-warning text-center py-4">
+        <h1 class="text-dark">¡Bienvenidos a Kuchau TV!</h1>
+        <p>El mejor canal para disfrutar de tus caricaturas favoritas</p>
+    </header>
 
-<section>
-    <h2>Horarios de Transmisión</h2>
-    <table>
-        <tr>
-            <th>Caricatura</th>
-            <th>Horario</th>
-        </tr>
-        <tr>
-            <td>Ben 10</td>
-            <td>08:00 AM - 09:00 AM</td>
-        </tr>
-        <tr>
-            <td>Bakugan</td>
-            <td>09:00 AM - 10:00 AM</td>
-        </tr>
-        <tr>
-            <td>El increible mundo de gumball</td>
-            <td>10:00 AM - 11:00 AM</td>
-        </tr>
-        <tr>
-            <td>Max Steel</td>
-            <td>10:00 AM - 11:00 AM</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>10:00 AM - 11:00 AM</td>
-        </tr>
-    </table>
-</section>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="#" onclick="showSection('inicio')">Inicio</a>
+                    </li>
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="#" onclick="showSection('caricaturas')">Caricaturas</a>
+                    </li>
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="#" onclick="showSection('horarios')">Horarios</a>
+                    </li>
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="#" onclick="showSection('sugerencias')">Sugerencias</a>
+                    </li>
+                </ul>
+            <h2 class="text-white fs-1">Kuchau TV</h2>
+        </div>
+    </nav>
 
-<section>
-    <h2>Sugerencias</h2>
-    <form>
-        <label for="nombre">Nombre del Programa:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <!-- Sección Inicio -->
+    <section id="inicio" class="container my-5 d-none">
+        <h2 class="text-center mb-4">Conócenos</h2>
+        <p>Ser el canal líder en entretenimiento infantil y familiar, reconocido por ofrecer contenido de alta calidad, educativo y divertido que inspire la imaginación, fomente la creatividad y fortalezca los lazos entre generaciones.</p>
+        <h3>Misión</h3>
+        <p>Proveer una programación variada y accesible que combine lo mejor de las caricaturas clásicas y modernas, promoviendo valores como la amistad, el respeto y el trabajo en equipo, mientras creamos un espacio seguro y entretenido para niños y sus familias.</p>
+        <h3>Visión</h3>
+        <p>Ser el canal número uno en entretenimiento infantil a nivel mundial.</p>
+        <h3>Valores</h3>
+        <ul>
+            <li><b>Creatividad: </b>Fomentamos ideas originales y narrativas innovadoras para inspirar a nuestra audiencia.</li>
+            <li><b>Diversión: </b>Nuestro objetivo principal es ofrecer entretenimiento que haga sonreír y disfrutar a nuestros televidentes.</li>
+            <li><b>Responsabilidad: </b>Nos comprometemos a ser un canal que respalde el desarrollo positivo de los niños y promueva valores universales.</li>
+            <li><b>Inclusión: </b>Promovemos una programación diversa que represente diferentes culturas y estilos de vida.</li>
+            <li><b>Educación: </b>Valoramos el aprendizaje y diseñamos contenido que combine diversión con enseñanza de lecciones importantes.</li>
+        </ul>
+        <h2 class="text-center mb-4">Nuestros Proovedores</h2>
+        <div class="container d-flex justify-content-center mt-4">
+            <img style="width: 50rem;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b9a5aa20-c48f-4456-bca1-74ded80c45f9/dgcwinb-ca50c9e4-e8f1-4b57-a000-64277acdad64.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I5YTVhYTIwLWM0OGYtNDQ1Ni1iY2ExLTc0ZGVkODBjNDVmOVwvZGdjd2luYi1jYTUwYzllNC1lOGYxLTRiNTctYTAwMC02NDI3N2FjZGFkNjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.h0RfMoDYhI_Brna0UTPrVY0vPrVY_8I9Z6Wr5hXdNdw" alt="Cartoon Network, Boomerang, Disney Channel, Nickelodeon, Discovery Kids, Disney XD, NatGeo Kids, Nick jr, Nicktoons, Disney Junior, Tooncast">
+        </div>
+        <h2 class="text-center mb-4">Video de Presentación</h2>
+        <div class="container d-flex justify-content-center mt-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dtU-MKphRvE?si=47EqA6g55bNYI5r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="container d-flex justify-content-center mt-2">
+            <a href="./AD.html">Consultar Audio Description</a>
+        </div>
 
-        <label for="descripcion">Descripción del Programa:</label>
-        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+    </section>
 
-        <input type="submit" value="Enviar Sugerencia">
-    </form>
-</section>
+    <!-- Sección Caricaturas -->
+    <section id="caricaturas" class="container my-5 d-none">
+        <h2 class="text-center mb-4">Nuestras caricaturas</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd5zBeLRHiwIRRRPBBkiwiBhZTHHyOg71ttw&s"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0312109/">
+                            <h3 class="card-title">KND: Los Chicos del Barrio</h3>
+                        </a>
+                        <p class="card-text">Un grupo de niños de 10 años llevan a cabo sus misiones secretas desde su misteriosa casa del árbol, oculta de los adultos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.sopitas.com/wp-content/uploads/2022/08/max-steel-comerciales-bajo-presupuesto-tiktok.jpeg"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0236908/">
+                            <h3 class="card-title">Max Steel</h3>
+                        </a>
+                        <p class="card-text">Un joven biónico se transforma en un súper agente con poderes sobrenaturales y combate a los enemigos de la paz.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbJjTHXZ1NQQp80AZCdJ7h5RgE4wNhvUV-6A&s"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0421482/">
+                            <h3 class="card-title">Winx Club</h3>
+                        </a>
+                        <p class="card-text">Bloom es una chica con poderes mágicos que va a una escuela de hadas para mejorar sus habilidades. Ella hace amistad con otras hadas y juntas forman el Club Winx. Ellas luchan por salvar al universo deLord Darkar y las brujas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images6.alphacoders.com/109/thumb-1920-1099224.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0366005/">
+                            <h3 class="card-title">Danny Phantom</h3>
+                        </a>
+                        <p class="card-text">Danny un joven que tiene superpoderes paranormales y que sólo su hermana y mejores amigos saben acerca de su secreto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.blogs.es/c510d0/avatar/840_560.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0417299/">
+                            <h3 class="card-title">Avatar: La Leyenda de Aang</h3>
+                        </a>
+                        <p class="card-text">Un chico de 12 años y sus amigos deben usar sus poderes para salvar al mundo del maléfico Señor del Fuego y traer paz para las tres naciones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/pokemon-1671869502.jpg?crop=1xw:0.8877840909090909xh;center,top&resize=1200:*"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0168366/">
+                            <h3 class="card-title">Pokémon</h3>
+                        </a>
+                        <p class="card-text">Ash, Brock y Misty continúan su viaje por la zona de Hoenn, aprendiendo las habilidades que necesitan para convertirse en entrenadores Pokémon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpznlMxWSz6n0gRrSG5mwiC3LDkq4XqHK2Q&s"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt1600757/">
+                            <h3 class="card-title">Kick Buttowski</h3>
+                        </a>
+                        <p class="card-text">Kick Buttowski es un doble de riesgo de 12 años fuera de lo común que sueña con ser famoso en todo el mundo con la ayuda de su mejor amigo Gunther.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/36bdc5ea4443cd8e42f22ec7d3884cbb.jpg"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0214341/">
+                            <h3 class="card-title">Dragon Ball Z</h3>
+                        </a>
+                        <p class="card-text">Un valiente joven con poderes increíbles se aventura hacia un viaje místico en tierras exóticas llenas de guerreros nobles, princesas hermosas, monstruos mutantes, extraterrestres y crueles ejércitos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OJAUXQNN5BD77I2AIO4DRVS2KI.jpeg"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0206512/">
+                            <h3 class="card-title">Bob Esponja</h3>
+                        </a>
+                        <p class="card-text">Bob, una esponja cuadrada y amarilla que junto a su mejor amigo Patricio tienen muchas aventuras en el Fondo de Bikini, la ciudad en la que viven, en el fondo del mar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://resizer.glanacion.com/resizer/v2/el-elenco-KZRKCVR4NRGXBL2FWMQW47ORRQ.jpg?auth=92bdcb2ecbaa6941f3c04408158429a83ce8d5783f8a248855ffc10a7ff9152c&width=768&quality=70&smart=false"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt1710308/">
+                            <h3 class="card-title">Un show más</h3>
+                        </a>
+                        <p class="card-text">Los amigos Mordecai y Rigby hacen tonterías para pasar el tiempo en su empleo de guardaparques… y también viven aventuras inesperadas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/CJNXWQRW5ZBEFDIBQLWUBAAT2M.png"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0760437/">
+                            <h3 class="card-title">Ben 10</h3>
+                        </a>
+                        <p class="card-text">La historia de Ben Tennyson, un niño típico que se vuelve muy atípico después de descubrir el Omnitrix, un misterioso dispositivo alienígena con el poder de transformar al usuario en diez especies alienígenas diferentes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIzZpg5XMYJp095N93tEbVemfOEaQM5ve0ZQ&s"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <a href="https://www.imdb.com/title/tt0458290/">
+                            <h3 class="card-title">CLONE WARS</h3>
+                        </a>
+                        <p class="card-text">Crónica de las aventuras de Anakin Skywalker, Yoda, Obi-Wan Kenobi y otros personajes populares del universo de "Star Wars" durante la violencia del "Clone Wars" mientras el grupo minoritario de caballeros Jedi lucha para restaurar la paz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Sección Horarios -->
+    <section id="horarios" class="container my-5">
+        <h2 class="text-center mt-5">Horarios de Transmisión</h2>
+        <table class="table table-striped mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th>Caricatura</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dragon Ball Z</td>
+                    <td>09:00 - 10:30 </td>
+                    <td>09:00 - 10:30</td>
+                    <td>09:00 - 10:30</td>
+                    <td>09:00 - 10:30</td>
+                    <td>09:00 - 10:30</td>
+                    <td>10:00 - 11:30</td>
+                    <td>10:00 - 11:30</td>
+                </tr>
+                <tr>
+                    <td>Pokémon</td>
+                    <td>10:30 - 12:00</td>
+                    <td>10:30 - 12:00</td>
+                    <td>10:30 - 12:00</td>
+                    <td>10:30 - 12:00</td>
+                    <td>10:30 - 12:00</td>
+                    <td>11:30 - 13:00</td>
+                    <td>11:30 - 13:00</td>
+                </tr>
+                <tr>
+                    <td>Avatar: La Leyenda de Aang</td>
+                    <td>13:00 - 14:30</td>
+                    <td>13:00 - 14:30</td>
+                    <td>13:00 - 14:30</td>
+                    <td>13:00 - 14:30</td>
+                    <td>13:00 - 14:30</td>
+                    <td>14:00 - 15:30</td>
+                    <td>14:00 - 15:30</td>
+                </tr>
+                <tr>
+                    <td>Winx Club</td>
+                    <td>14:30 - 16:00</td>
+                    <td>14:30 - 16:00</td>
+                    <td>14:30 - 16:00</td>
+                    <td>14:30 - 16:00</td>
+                    <td>14:30 - 16:00</td>
+                    <td>15:30 - 17:00</td>
+                    <td>15:30 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>KND: Los chicos del barrio</td>
+                    <td>16:00 - 17:30</td>
+                    <td>16:00 - 17:30</td>
+                    <td>16:00 - 17:30</td>
+                    <td>16:00 - 17:30</td>
+                    <td>16:00 - 17:30</td>
+                    <td>17:00 - 18:30</td>
+                    <td>17:00 - 18:30</td>
+                </tr>
+                <tr>
+                    <td>Max Steel</td>
+                    <td>17:30 - 19:00</td>
+                    <td>17:30 - 19:00</td>
+                    <td>17:30 - 19:00</td>
+                    <td>17:30 - 19:00</td>
+                    <td>17:30 - 19:00</td>
+                    <td>18:30 - 20:00</td>
+                    <td>18:30 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>Danny Phantom</td>
+                    <td>19:00 - 20:30</td>
+                    <td>19:00 - 20:30</td>
+                    <td>19:00 - 20:30</td>
+                    <td>19:00 - 20:30</td>
+                    <td>19:00 - 20:30</td>
+                    <td>20:00 - 21:30</td>
+                    <td>20:00 - 21:30</td>
+                </tr>
+                <tr>
+                    <td>Kick Buttowski</td>
+                    <td>20:30 - 22:00</td>
+                    <td>20:30 - 22:00</td>
+                    <td>20:30 - 22:00</td>
+                    <td>20:30 - 22:00</td>
+                    <td>20:30 - 22:00</td>
+                    <td>21:30 - 23:00</td>
+                    <td>21:30 - 23:00</td>
+                </tr>
+                <tr>
+                    <td>Bob Esponja</td>
+                    <td>22:00 - 23:30</td>
+                    <td>22:00 - 23:30</td>
+                    <td>22:00 - 23:30</td>
+                    <td>22:00 - 23:30</td>
+                    <td>22:00 - 23:30</td>
+                    <td>23:00 - 00:30</td>
+                    <td>23:00 - 00:30</td>
+                </tr>
+                <tr>
+                    <td>Danny Phantom</td>
+                    <td>23:30 - 01:00</td>
+                    <td>23:30 - 01:00</td>
+                    <td>23:30 - 01:00</td>
+                    <td>23:30 - 01:00</td>
+                    <td>23:30 - 01:00</td>
+                    <td>00:30 - 02:00</td>
+                    <td>00:30 - 02:00</td>
+                </tr>
+                <tr>
+                    <td>Kick Buttowski</td>
+                    <td>01:00 - 02:30</td>
+                    <td>01:00 - 02:30</td>
+                    <td>01:00 - 02:30</td>
+                    <td>01:00 - 02:30</td>
+                    <td>01:00 - 02:30</td>
+                    <td>02:00 - 03:30</td>
+                    <td>02:00 - 03:30</td>
+                </tr>
+                <tr>
+                    <td>Bob Esponja</td>
+                    <td>02:30 - 04:00</td>
+                    <td>02:30 - 04:00</td>
+                    <td>02:30 - 04:00</td>
+                    <td>02:30 - 04:00</td>
+                    <td>02:30 - 04:00</td>
+                    <td>03:30 - 05:00</td>
+                    <td>03:30 - 05:00</td>
+                </tr>
+                <tr>
+                    <td>Un show más</td>
+                    <td>04:00 - 05:30</td>
+                    <td>04:00 - 05:30</td>
+                    <td>04:00 - 05:30</td>
+                    <td>04:00 - 05:30</td>
+                    <td>04:00 - 05:30</td>
+                    <td>05:00 - 06:30</td>
+                    <td>05:00 - 06:30</td>
+                </tr>
+                <tr>
+                    <td>MAD</td>
+                    <td>05:30 - 07:00</td>
+                    <td>05:30 - 07:00</td>
+                    <td>05:30 - 07:00</td>
+                    <td>05:30 - 07:00</td>
+                    <td>05:30 - 07:00</td>
+                    <td>06:30 - 08:00</td>
+                    <td>06:30 - 08:00</td>
+                </tr>
+                <tr>
+                    <td>CLONE WARS</td>
+                    <td>07:00 - 09:00</td>
+                    <td>07:00 - 09:00</td>
+                    <td>07:00 - 09:00</td>
+                    <td>07:00 - 09:00</td>
+                    <td>07:00 - 09:00</td>
+                    <td>08:00 - 10:00</td>
+                    <td>08:00 - 10:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección Sugerencias -->
+    <section id="sugerencias" class="container my-5 d-none">
+        <h3 class="text-center">Sugerir una Nueva Caricatura</h3>
+        <p class="text-center">¡Queremos conocer tus ideas! Por favor, completa el formulario para sugerir una nueva caricatura.</p>
+        <div class="container d-flex justify-content-center">
+            <form class="w-50 mt-4">
+                <div class="mb-3">
+                    <label for="nombreCaricatura" class="form-label">Nombre de la Caricatura</label>
+                    <input type="text" class="form-control" id="nombreCaricatura" required>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcionCaricatura" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="descripcionCaricatura" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Enviar Sugerencia</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-center py-4 text-white">
+        <p>&copy; KuchauTV</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
