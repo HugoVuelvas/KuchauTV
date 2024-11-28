@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kuchau TV es tu canal favorito para disfrutar de las mejores caricaturas. Descubre horarios y programas clásicos.">
+    <title>Kuchau TV - Canal de Caricaturas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0px;
+            padding: 0;
+        }
+
+        body section {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 50px;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            color: #333;
+        }
+
+        .caricaturas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .caricatura {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: #333 0px 0px px;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            text-align: start;
+        }
+
+        .caricatura img {
+            display: block;
+            max-width: 100%;
+            margin: 0px auto;
+            height: max-content;
+            border-radius: 10px;
+
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border: 1px solid #ccc;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="button"] {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .annotate {
+            font-style: italic;
+            color: #366ed4;
+        }
+
+        [role="table"] {
+            display: center;
+            text-align: center;
+        }
+
+        [role="table"]>div[id] {
+            display: table-caption;
+            font-style: italic;
+        }
+
+        [role="table"] [role="row"] {
+            display: table-row;
+        }
+
+        [role="table"] [role="cell"],
+        [role="table"] [role="columnheader"] {
+            display: table-cell;
+            padding: 0.25em 0.25em;
+            width: 20em;
+        }
+
+        [role="table"] [role="columnheader"] {
+            font-weight: bold;
+            border-bottom: thin solid #888;
+        }
+
+        [role="table"] [role="rowgroup"]:last-child [role="row"]:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        [role="alert"] {
+            padding: 10px;
+            border: 2px solid hsl(206deg 74% 54%);
+            border-radius: 4px;
+            background: hsl(206deg 74% 90%);
+        }
+
+        [role="alert"]:empty {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header role="banner" aria-labelledby="titulo-principal">
+        <h1 id="titulo-principal">¡Bienvenidos a Kuchau TV!</h1>
+        <p>El mejor canal para disfrutar de tus caricaturas favoritas</p>
+    </header>
+
+    <main role="main">
+        <!-- Sección de caricaturas -->
+        <h2 id="caricaturas-titulo">Caricaturas Destacadas</h2>
+        <section class="caricaturas" aria-labelledby="caricaturas-titulo">
+            <div class="caricatura" role="article" aria-labelledby="titulo-knd">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd5zBeLRHiwIRRRPBBkiwiBhZTHHyOg71ttw&s"
+                    alt="">
+                <h3>KND: Los Chicos del Barrio</h3>
+                <p>Un grupo de niños de 10 años llevan a cabo sus misiones secretas desde su misteriosa casa del árbol,
+                    oculta de los adultos.</p>
+            </div>
+            <div class="caricatura" role="article" aria-labelledby="titulo-maxsteel">
+                <img src="https://www.sopitas.com/wp-content/uploads/2022/08/max-steel-comerciales-bajo-presupuesto-tiktok.jpeg"
+                    alt="">
+                <h3>Max Steel</h3>
+                <p>Un joven biónico se transforma en un súper agente con poderes sobrenaturales y combate a los enemigos
+                    de la paz.</p>
+            </div>
+            <div class="caricatura" role="article" aria-labelledby="titulo-winx">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbJjTHXZ1NQQp80AZCdJ7h5RgE4wNhvUV-6A&s"
+                    alt="">
+                <h3>Winx Club</h3>
+                <p>Bloom es una chica con poderes mágicos que va a una escuela de hadas para mejorar sus habilidades.
+                    Ella
+                    hace amistad con otras hadas y juntas forman el Club Winx. Ellas luchan por salvar al universo de
+                    Lord
+                    Darkar y las brujas.</p>
+            </div>
+            <div class="caricatura" role="article" aria-labelledby="titulo-danny">
+                <img src="https://images6.alphacoders.com/109/thumb-1920-1099224.jpg" alt="">
+                <h3>Danny Phantom</h3>
+                <p>Danny un joven que tiene superpoderes paranormales y que sólo su hermana y mejores amigos saben
+                    acerca de
+                    su secreto.</p>
+            </div>
+            <div class="caricatura" role="article" aria-labelledby="titulo-kick">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpznlMxWSz6n0gRrSG5mwiC3LDkq4XqHK2Q&s"
+                    alt="">
+                <h3>Kick Buttowski</h3>
+                <p>Kick Buttowski es un doble de riesgo de 12 años fuera de lo común que sueña con ser famoso en todo el
+                    mundo con la ayuda de su mejor amigo Gunther.</p>
+            </div>
+            <div class="caricatura" role="article" aria-labelledby="titulo-ben10">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRciSiLitrW-W_1HYIw5jvwS2afMsTK2465gg&s"
+                    alt="">
+                <h3>Ben 10</h3>
+                <p>Ben Tennyson es un niño de 10 años de edad que descubre un dispositivo mágico que lo puede convertir
+                    en
+                    10 héroes alienígenas diferentes cada uno con sus propias habilidades, ayudando a los demás contra
+                    los
+                    malhechores.</p>
+            </div>
+        </section>
+
+        <!-- Sección de horarios -->
+        <section>
+            <h2>Horarios de Transmisión</h2>
+            <div role="table" aria-label="Students" aria-describedby="students_table_desc">
+                <div role="rowgroup">
+                    <div role="row">
+                        <span role="columnheader">
+                            Programa
+                        </span>
+                        <span role="columnheader">
+                            Clasificación
+                        </span>
+                        <span role="columnheader">
+                            Horario
+                    </div>
+                </div>
+                <div role="rowgroup">
+                    <div role="row">
+                        <span role="cell">
+                            Tom y Jerry
+                        </span>
+                        <span role="cell">
+                            Todas las edades
+                        </span>
+                        <span role="cell">
+                            9:00 - 10:00 am
+                        </span>
+                    </div>
+                    <div role="row">
+                        <span role="cell">
+                            Looney
+                        </span>
+                        <span role="cell">
+                            Todas las edades
+                        </span>
+                        <span role="cell">
+                            10:00 - 11:00 am
+                        </span>
+                    </div>
+                    <div role="row">
+                        <span role="cell">
+                            Pitufos
+                        </span>
+                        <span role="cell">
+                            Todas las edades
+                        </span>
+                        <span role="cell">
+                            11:00 - 12:00 am
+                        </span>
+                    </div>
+                    <div role="row">
+                        <span role="cell">
+                            Laboratorio de Dexter
+                        </span>
+                        <span role="cell">
+                            Todas las edades
+                        </span>
+                        <span role="cell">
+                            12:00 - 1:00 pm
+                        </span>
+                    </div>
+                    <div role="row">
+                        <span role="cell">
+                            Kid vs Cat
+                        </span>
+                        <span role="cell">
+                            Todas las edades
+                        </span>
+                        <span role="cell">
+                            1:00 - 2:00 pm
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de sugerencias -->
+        <section aria-labelledby="sugerencias-titulo">
+            <h2 id="sugerencias-titulo">Sugerencias</h2>
+            <form aria-labelledby="form-sugerencias">
+                <fieldset>
+                    <legend id="form-sugerencias">Envía tus sugerencias para nuevos programas</legend>
+                    <label for="nombre">Nombre del Programa:</label>
+                    <input type="text" id="nombre" name="nombre" required aria-required="true">
+
+                    <label for="descripcion">Descripción del Programa:</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" required aria-required="true"></textarea>
+
+                    <button type="button" onclick="addAlert()">
+                        Trigger Alert
+                    </button>
+                    <div id="example" role="alert"></div>
+                    <script type="text/template" id="alert-exito">
+                        <p>Enviado con exito</p>
+                    </script>
+                    <script type="text/template" id="alert-reintentar">
+                        <p>Intente de nuevo</p>
+                    </script>
+                    <script>
+                        function addAlert() {
+                            if (document.getElementById('nombre').value != "" && document.getElementById('descripcion').value != "") {
+                                var example = document.getElementById('example');
+                                var template = document.getElementById('alert-exito').innerHTML;
+
+                                example.innerHTML = template;
+                            }
+                            else{
+                                var example = document.getElementById('example');
+                                var template = document.getElementById('alert-reintentar').innerHTML;
+
+                                example.innerHTML = template;
+                            }
+                        }
+                    </script>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Kuchau TV - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
